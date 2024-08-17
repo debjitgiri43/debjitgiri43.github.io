@@ -56,9 +56,31 @@
     <div class="container">
         <div class="socials">
             <p>Gmail: <a>debjitgiri43@gmail.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/debjitg912">@debjitg912</a></p>
-            <p>Github: <a href="https://github.com/debjitgiri43?tab=repositories">debjitgiri43</a></p>
+            <p>Instagram: <a onclick="instagram()">@debjitg912</a></p>
+            <p>Github: <a onclick="github()">debjitgiri43</a></p>
         </div>
     </div>
+
+    <script>
+        let mywindow;
+        function instagram(){
+            var a=confirm("You will be redirected to Debjit's Instagram. Do you agree?");
+            if (a===true){
+                mywindow=window.open("https://www.instagram.com/debjitg912/");
+            }
+            else{
+                window.open("https://debjitgiri43.github.io/");
+            }
+        }
+        function github(){
+            var a=window.confirm("You will be redirected to Debjit's Github. Do you agree?");
+            if (a===true){
+                mywindow=window.open("https://www.github.com/debjitgiri43", "mywindow", "width=400, height=400");
+            }
+            else{
+                window.open("https://debjitgiri43.github.io/");
+            }
+        }
+    </script>
 </body>
 </html>
