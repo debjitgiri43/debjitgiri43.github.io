@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background-image: url('massimiliano-morosinotto-Rvu0szjpUNw-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hid{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s all;
+}
+.hid:hover{
+    background-color: #8BB494;
+    border-radius: 12px;
+    transition: 0.8s all;
+    color: #040F00;
+}
+nav{
+    position: relative;
+    top: 10px;
+    width: 524px;
+    height: 50px;
+    background: transparent;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 2px 2px 5px #051900, 2px 2px 5px #051900;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.8s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover{
+    font-size: 1.1em;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifo;
+    cursor: default;
+    animation: 0.8s fadeinUP;
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: 0.8s fadeinUP;
+}
+.support{
+    display: none;
+}
+.socials{
+    display: none;
+}
+.abouttt{
+    font-size: 35px;
+}
+.container{
+    display: flex;
+    position: absolute;
+    top:35%;
+    transition: all 0.8s;
+}
+.intro{
+    animation: 0.8s fadeinUP;
+}
+@keyframes fadeinUP{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.home{
+    display: block;
+}
+.about{
+    display: none;
+}
